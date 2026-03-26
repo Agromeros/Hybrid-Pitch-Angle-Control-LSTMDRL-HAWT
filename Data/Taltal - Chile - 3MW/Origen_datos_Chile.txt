@@ -1,0 +1,1 @@
+Datos meteorológicos,http://walker.dgf.uchile.cl/Mediciones/datos/csv/D04T3.csv
