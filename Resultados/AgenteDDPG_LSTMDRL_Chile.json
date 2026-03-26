@@ -1,0 +1,24 @@
+{
+  "model_type": "LSTM-DRL",
+  "hyperparameters": {
+    "w1": 8.03383487636944,
+    "w2": 6.331705289955226,
+    "w3": 5.139388480023125,
+    "episode_length": 200,
+    "learning_rate": 0.0012525991834766573,
+    "buffer_size": 5000,
+    "batch_size": 64,
+    "tau": 0.01089596183153627,
+    "gamma": 0.9095854878277455
+  },
+  "test_results": {
+    "mean_reward": 577.089156972155,
+    "mean_power": 1394.4299571453587,
+    "mean_omega": 1.5572113736356323,
+    "mean_pred_error": 1.1824535097007667
+  },
+  "gaps": {
+    "train_val_pct": -635.2575988471476,
+    "val_test_pct": -172.95603934103772
+  }
+}

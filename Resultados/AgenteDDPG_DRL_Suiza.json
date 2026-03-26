@@ -1,0 +1,24 @@
+{
+  "model_type": "DRL-SW",
+  "hyperparameters": {
+    "w1": 9.824548485318052,
+    "w2": 7.586762826070333,
+    "w3": 5.953430002624877,
+    "episode_length": 200,
+    "learning_rate": 0.0003042953166538178,
+    "buffer_size": 3000,
+    "batch_size": 256,
+    "tau": 0.002222801950586232,
+    "gamma": 0.998854450393546
+  },
+  "test_results": {
+    "mean_reward": 46.396918053155545,
+    "mean_power": 1.0147514205824217,
+    "mean_omega": 30.999524266525327,
+    "mean_pred_error": null
+  },
+  "gaps": {
+    "train_val_pct": -6860.758820909477,
+    "val_test_pct": 31.2789464477083
+  }
+}
