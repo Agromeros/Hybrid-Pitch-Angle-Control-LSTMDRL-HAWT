@@ -29,18 +29,18 @@ En la práctica, un operador necesita optimizar simultáneamente:
 
 ## ⚙️ Arquitectura del modelo híbrido
 
-| Arquitectura Conceptual | Arquitectura Modular |
+| Flujo de datos | Deep Reinforcement Learning |
 |-------------------------|----------------------|
-| ![Arquitectura Conceptual](ruta/imagen_conceptual.png) | ![Arquitectura Modular](ruta/imagen_modular.png) |
+| ![Flujo de datos](Imagenes/FlujoDatos.png) | ![Deep Reinforcemen Learning](Imagenes/DRL.png) |
 
 **Módulo 1 — Predicción (LSTM)**  
-Anticipa la velocidad del viento antes de que impacte las palas.  
+Pronostica la velocidad del viento mediante una red LSTM alimentada de datos meteorológicos
 
 **Módulo 2 — Entorno (kNN)**  
-Modela la dinámica de la turbina con datos operacionales.  
+Modela la dinámica de los datos operacionales relacionandolos mediante un K-Nearest neightboors. Se utiliza debido a la confidencialidad de los datos de la trurbina con el fin de obtener una transición de estados.
 
 **Módulo 3 — Control (DDPG)**  
-Agente de Deep Reinforcement Learning que ajusta el ángulo de paso optimizando:  
+Agente DDPG, en el paradigna de Deep Reinforcement Learning, que ajusta el ángulo de paso optimizando:  
 - Potencia generada  
 - Estabilidad del rotor  
 - Reducción de fatiga mecánica  
@@ -51,10 +51,8 @@ Agente de Deep Reinforcement Learning que ajusta el ángulo de paso optimizando:
 
 | Chile (Taltal, Vestas V-112, 3 MW) | Suiza (Taggenberg, Aventa AV-7, 6 kW) |
 |------------------------------------|---------------------------------------|
-| ![Resultados Chile](ruta/imagen_chile.png) | ![Resultados Suiza](ruta/imagen_suiza.png) |
+| ![Resultados Chile](Imagenes\Resultados_Chile.png) | ![Resultados Suiza](Imagenes\Resultados_Suiza.png) |
 
-**Chile:** eficiencia integrada = **806,635**  
-**Suiza:** eficiencia integrada = **0,356**  
 
 > En ambos casos, el modelo híbrido supera la eficiencia obtenida con viento real y datos reales, demostrando un mejor balance entre rendimiento energético y estabilidad de control.
 
@@ -63,7 +61,7 @@ Agente de Deep Reinforcement Learning que ajusta el ángulo de paso optimizando:
 ## 👤 Autor
 
 **Alonso Romero Sánchez**  
-Egresado Ingeniería Civil Industrial | Data Science · ML · Deep RL  
+Ingeniero Civil Industrial | Data Science · ML · Deep RL  
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Alonso_Romero-blue)](https://www.linkedin.com/in/alonsoromerosanchez)  
 [![Email](https://img.shields.io/badge/Email-agromero%40miuandes.cl-red)](mailto:agromero@miuandes.cl)  
