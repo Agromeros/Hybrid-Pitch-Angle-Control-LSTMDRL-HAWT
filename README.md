@@ -50,10 +50,10 @@ Agente DDPG, en el paradigna de Deep Reinforcement Learning, que ajusta el ángu
 ## 📊 Resultados
 
 Chile (Taltal, Vestas V-112, 3 MW)
-![Resultados Chile](Imagenes\Resultados_Chile.png)
+![Resultados Chile](Imagenes/Resultados_Chile.png)
 
 Suiza (Taggenberg, Aventa AV-7, 6 kW)
-![Resultados Suiza](Imagenes\Resultados_Suiza.png)
+![Resultados Suiza](Imagenes/Resultados_Suiza.png)
 
 > En ambos casos, el modelo híbrido supera la eficiencia obtenida con viento real y datos reales, demostrando un mejor balance entre rendimiento energético y estabilidad de control.
 
