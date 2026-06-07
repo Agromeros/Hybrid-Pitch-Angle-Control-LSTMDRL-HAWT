@@ -13,9 +13,9 @@
 
 ## 📌 Problema
 La **velocidad del viento es estocástica**, no se puede saber con certeza su disponibilidad. 
-Además, los **controladores tradicionales reaccionan al viento observado y suelen asumir comportamientos lineales. Esto limita su capacidad para operar bajo incertidumbre y equilibrar simultáneamente captura energética, estabilidad del rotor y desgaste mecánico.
+Además, los **controladores tradicionales asumen linealidad** en sus componentes. Esto limita su capacidad para operar bajo incertidumbre y equilibrar simultáneamente captura energética, estabilidad del rotor y desgaste mecánico.
 
-El **control del ángulo de paso (pitch)** el componente con mayor impacto en la eficiencia y seguridad de un aerogenerador. 
+El **control del ángulo de paso (pitch) es el componente con mayor impacto** en la eficiencia y seguridad de un aerogenerador.
 Sin embargo, la mayoría de los controladores inteligentes optimizan un solo objetivo: la potencia.  
 
 En la práctica, un operador necesita optimizar simultáneamente:  
@@ -34,7 +34,7 @@ En la práctica, un operador necesita optimizar simultáneamente:
 **Módulo 1 — Predicción (LSTM)**  
 Pronostica la velocidad del viento mediante una red LSTM alimentada de datos meteorológicos
 
-**Módulo 2 — Entorno (kNN)**  
+**Módulo 2 — Modelo Sustituto / Transición (kNN)**  
 Modela la dinámica de los datos operacionales relacionandolos mediante un K-Nearest neightboors. Se utiliza debido a la confidencialidad de los datos de la trurbina con el fin de obtener una transición de estados.
 
 **Módulo 3 — Control (DDPG)**  
