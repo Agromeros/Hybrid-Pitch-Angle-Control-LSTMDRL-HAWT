@@ -65,6 +65,7 @@ Agente DDPG, en el paradigna de Deep Reinforcement Learning, que ajusta el ángu
 - R^2 Lineal: 0.596
 - R^2 LSTM: 0.927
 > La red LSTM tiene un mejor coeficiente de determinación que el modelo OLS.
+
 **Control DDPG**
 ![Resultados Chile](Imagenes/Resultados_Chile.png)
 
