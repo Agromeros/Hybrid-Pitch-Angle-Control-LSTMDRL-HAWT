@@ -12,12 +12,10 @@
 ---
 
 ## 📌 Problema
-La energía eólica es estocástica por naturaleza. El costo de esa imprevisibilidad es:
-- Desgaste prematuro de las turbinas  
-- Inestabilidad en la potencia generada  
-- Reducción de la vida útil de los componentes mecánicos  
+La **velocidad del viento es estocástica**, no se puede saber con certeza su disponibilidad. 
+Además, los **controladores tradicionales reaccionan al viento observado y suelen asumir comportamientos lineales. Esto limita su capacidad para operar bajo incertidumbre y equilibrar simultáneamente captura energética, estabilidad del rotor y desgaste mecánico.
 
-El **control del ángulo de paso (pitch)** es el mecanismo más crítico para contrarrestar este problema.  
+El **control del ángulo de paso (pitch)** el componente con mayor impacto en la eficiencia y seguridad de un aerogenerador. 
 Sin embargo, la mayoría de los controladores inteligentes optimizan un solo objetivo: la potencia.  
 
 En la práctica, un operador necesita optimizar simultáneamente:  
@@ -44,6 +42,16 @@ Agente DDPG, en el paradigna de Deep Reinforcement Learning, que ajusta el ángu
 - Potencia generada  
 - Estabilidad del rotor  
 - Reducción de fatiga mecánica  
+
+**Recompensa del Agente**
+
+![Recompensa Multiobjetivo](Imagenes/Reward.png)
+
+- R_t: Recompensa
+- w₁, w₂, w₃: Pesos relativos
+- Pₜ, Pₘₐₓ: Potencia
+- ωₜ, ωᵣₑ𝒻: Velocidad angular del rotor
+- βₜ, Δβₜ, βₘₐₓ: Ángulo de paso
 
 ---
 
