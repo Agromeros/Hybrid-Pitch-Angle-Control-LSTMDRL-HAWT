@@ -45,6 +45,8 @@ Agente DDPG, en el paradigna de Deep Reinforcement Learning, que ajusta el ángu
 
 **Recompensa del Agente**
 
+> Maximizar la generación de energía, minimizar el penalizar la desviación de la velocidad nominal del rotor, sancionando los cambios abruptos de la acción.
+
 ![Recompensa Multiobjetivo](Imagenes/Reward.png)
 
 - R_t: Recompensa
