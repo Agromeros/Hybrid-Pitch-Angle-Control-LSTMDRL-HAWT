@@ -43,7 +43,7 @@ Agente DDPG, en el paradigna de Deep Reinforcement Learning, que ajusta el ángu
 - Estabilidad del rotor  
 - Reducción de fatiga mecánica  
 
-### Recompensa del Agente
+### 💸 Recompensa del Agente
 
 > Maximizar la generación de energía, minimizar el penalizar la desviación de la velocidad nominal del rotor, sancionando los cambios abruptos de la acción.
 
@@ -82,6 +82,16 @@ Agente DDPG, en el paradigna de Deep Reinforcement Learning, que ajusta el ángu
 ![Resultados Suiza](Imagenes/Resultados_Suiza.png)
 
 > En ambos casos, el modelo híbrido supera la eficiencia obtenida con viento real y datos reales, demostrando un mejor balance entre rendimiento energético y estabilidad de control.
+
+---
+
+## 🧠 Conclusiones
+
+De las tablas se puede concluir que el modelo propuesto logra obtener una frontera de pareto, logrando un equilibrio en el trade off de potencia, estabilidad del rotor y del ángulo de paso.
+
+En Chile, el modelo propuesto logra capturar un 20% más potencia que la observada en el escenario real. Mientras, reduce un 49% y 93% la variabilidad de la velocidad del rotor y el movimiento del controlador de paso, respectivamente.
+
+En Suiza, el modelo propuesto logra capturar el 97% de la potencia observada en el escenario rea. Mientras, reduce un 49% y 93% la variabilidad de la velocidad del rotor y el movimiento del controlador de paso, respectivamente.
 
 ---
 
