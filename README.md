@@ -59,10 +59,25 @@ Agente DDPG, en el paradigna de Deep Reinforcement Learning, que ajusta el ángu
 
 ## 📊 Resultados
 
-Chile (Taltal, Vestas V-112, 3 MW)
+### Chile (Taltal, Vestas V-112, 3 MW)
+**Predicción LSTM**
+![Real_Pronostico_CL](Imagenes/Graficos_Series_temporales_RealPronostico_CL.png)
+- R^2 Lineal: 0.596
+- R^2 LSTM: 0.927
+> La red LSTM tiene un mejor coeficiente de determinación que el modelo OLS.
+**Control DDPG**
 ![Resultados Chile](Imagenes/Resultados_Chile.png)
 
-Suiza (Taggenberg, Aventa AV-7, 6 kW)
+### Suiza (Taggenberg, Aventa AV-7, 6 kW)
+**Predicción LSTM**
+![Real_Pronostico_SW](Imagenes/Graficos_Series_temporales_RealPronostico_SW.png)
+- R^2 Lineal: 0.125
+- R^2 LSTM: 0.283 
+> La red LSTM tiene un mejor coeficiente de determinación que el modelo OLS. No es similarmente mejor que en el caso de Chile pero es relevante. 
+
+> Cabe destacar que no se busca el mejor modelo de predicción si no como esta interactúa con el agente.
+
+**Control DDPG**
 ![Resultados Suiza](Imagenes/Resultados_Suiza.png)
 
 > En ambos casos, el modelo híbrido supera la eficiencia obtenida con viento real y datos reales, demostrando un mejor balance entre rendimiento energético y estabilidad de control.
