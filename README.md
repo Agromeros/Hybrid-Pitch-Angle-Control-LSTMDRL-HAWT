@@ -49,11 +49,11 @@ Agente DDPG, en el paradigna de Deep Reinforcement Learning, que ajusta el ángu
 
 ![Recompensa Multiobjetivo](Imagenes/Reward.png)
 
-- R_t: Recompensa
-- w₁, w₂, w₃: Pesos relativos
-- Pₜ, Pₘₐₓ: Potencia
-- ωₜ, ωᵣₑ𝒻: Velocidad angular del rotor
-- βₜ, Δβₜ, βₘₐₓ: Ángulo de paso
+- R_t: Recompensa en el tiempo t.
+- w₁, w₂, w₃: Pesos relativos de cada objetivo.
+- Pₜ, Pₘₐₓ: Potencia en el tiempo t, Potencia máxima.
+- ωₜ, ωᵣₑ𝒻: Velocidad angular del rotor, Velocidad angular de referencia del rotor.
+- βₜ, Δβₜ, βₘₐₓ: Ángulo de paso en el tiempo t, Cambio del ángulo en el tiempo t, ángulo máximo.
 
 ---
 
